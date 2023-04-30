@@ -5,9 +5,7 @@
   --tan-300: 34, 44%, 45%;
   --tan-400: 34, 44%, 60%;
   --tan-500: 34, 44%, 80%;
-  --tan-600: 34, 44%, 90%;
-  --bg-dark: 10, 50%, 10%;
-  --light-text: 10, 10%, 95%;
+  --tan-600: 34, 44%, 95%;
   --red-decor: 0, 100%, 45%;
 }
 
@@ -28,8 +26,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   line-height: 1.75;
-  background-image: linear-gradient(0.25turn, hsl(var(--bg-dark)), hsl(var(--tan-400)) 15%, hsl(var(--tan-500)), hsl(var(--tan-400)) 85%, hsl(var(--bg-dark)));
-  background-image: radial-gradient(hsl(var(--tan-500)), hsl(var(--tan-400)) 78%, hsl(var(--red-decor)) 79%, hsl(var(--tan-400)) 80%, hsl(var(--bg-dark)));
+  background-image: radial-gradient(hsl(var(--tan-500)), hsl(var(--tan-400)) 78%, hsl(var(--red-decor)) 79%, hsl(var(--tan-400)) 80%, hsl(var(--tan-100)));
   font-family: "Roboto", sans-serif;
 }
 
@@ -69,7 +66,7 @@ nav ul {
   grid-template-columns: repeat(6, 1fr);
   gap: 3px;
   border: 1px solid black;
-  background-color: hsl(var(--tan-200));
+  background-color: hsl(var(--tan-100));
   border-radius: 10%;
   justify-content: left;
   max-width: 100%;
@@ -85,7 +82,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: hsl(var(--light-text));
+  color: hsl(var(--tan-600));
 }
 
 nav ul li:hover {
