@@ -1,0 +1,93 @@
+/* main */
+:root {
+  --tan-100: 34, 44%, 20%;
+  --tan-200: 34, 44%, 30%;
+  --tan-300: 34, 44%, 45%;
+  --tan-400: 34, 44%, 60%;
+  --tan-500: 34, 44%, 80%;
+  --tan-600: 34, 44%, 90%;
+  --bg-dark: 10, 50%, 10%;
+  --light-text: 10, 10%, 95%;
+  --red-decor: 0, 100%, 45%;
+}
+
+:where(ul, ol) {
+  list-style-position: inside;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Foldit", cursive;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  line-height: 1.75;
+  background-image: linear-gradient(0.25turn, hsl(var(--bg-dark)), hsl(var(--tan-400)) 15%, hsl(var(--tan-500)), hsl(var(--tan-400)) 85%, hsl(var(--bg-dark)));
+  background-image: radial-gradient(hsl(var(--tan-500)), hsl(var(--tan-400)) 78%, hsl(var(--red-decor)) 79%, hsl(var(--tan-400)) 80%, hsl(var(--bg-dark)));
+  font-family: "Roboto", sans-serif;
+}
+
+#contentWrapper {
+  grid-column: 2/3;
+  max-width: 65ch;
+  justify-self: center;
+}
+
+.link-github svg {
+  max-width: 25px;
+}
+
+.skip-link {
+  border: 1px solid black;
+  position: absolute;
+  left: -1000px;
+}
+
+.skip-link:focus {
+  position: relative;
+  margin: 1rem;
+  left: 0;
+  top: 5px;
+}
+
+li {
+  list-style: "{<>} ";
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3px;
+  border: 1px solid black;
+  background-color: hsl(var(--tan-200));
+  border-radius: 10%;
+  justify-content: left;
+  max-width: 100%;
+  padding: 0.25rem;
+}
+
+nav ul li {
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: hsl(var(--light-text));
+}
+
+nav ul li:hover {
+  background-color: hsl(var(--tan-300));
+}
