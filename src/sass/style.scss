@@ -147,9 +147,8 @@ nav {
 }
 
 nav ul {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 3px;
+    display: flex;
+    flex-wrap: wrap;
 
     border: 1px solid black;
     background-color: hsl(var(--tan-100));
@@ -164,9 +163,9 @@ nav ul {
 nav ul li {
     // border-left: 1px solid black;
     // border-right: 1px solid black;
-
-    width: 100%;
     height: 100%;
+    padding: 5px;
+    margin: auto;
 
     justify-self: center;
     text-align: center;
